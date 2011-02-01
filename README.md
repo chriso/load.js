@@ -4,11 +4,11 @@ Built on top of [chain.js](https://github.com/chriso/chain.js), it allows you to
 
 ## Example
 
-    load('jquery.js').then('jquery-ui.js', 'jquery-ui-theme.js').then('myscript.js').thenRun(function () {
+    loadJS.load('jquery.js').then('jquery-ui.js', 'jquery-ui-theme.js').then('myscript.js').thenRun(function () {
         alert('Loaded.');
     });
 
-    load('underscore.js');
+    loadJS.load('underscore.js');
 
 **Some things to note:**
 
@@ -19,15 +19,15 @@ Built on top of [chain.js](https://github.com/chriso/chain.js), it allows you to
 ## Example 2
 
 Load a script after a 0.5s delay
-    
-    defer(500).thenLoad('myscript2.js');
-    
+
+    loadJS.defer(500).thenLoad('myscript2.js');
+
 ## Example 3
 
-    load('myscript2.js').onError(function (err) {
+    loadJS.load('myscript2.js').onError(function (err) {
         //Handle any errors here..
     });
-   
+
 **For more examples of the available methods, see the [chain.js](https://github.com/chriso/chain.js) page**
 
 ### License
@@ -54,5 +54,3 @@ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
 LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
